@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Pakar Diagnosa Tanaman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Sistem Pakar Diagnosa Tanaman</h2>
+    <label for="gejala">Pilih Gejala:</label>
+    <select id="gejala">
+      <option value="">-- Pilih Gejala --</option>
+      <option value="layu">Daun Layu</option>
+      <option value="bercak">Bercak Coklat</option>
+      <option value="menguning">Daun Menguning</option>
+      <option value="menggulung">Daun Menggulung</option>
+      <option value="batang_busuk">Batang Busuk</option>
+      <option value="berbintik">Daun Berbintik Putih</option>
+      <option value="lambat">Pertumbuhan Lambat</option>
+      <option value="berlubang">Daun Berlubang</option>
+      <option value="akar_hitam">Akar Hitam</option>
+    </select>
+
+    <button onclick="diagnosa()">Diagnosa</button>
+    <div id="hasil"></div>
+    <img id="gambarTanaman" src="" alt="Gambar Tanaman">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
